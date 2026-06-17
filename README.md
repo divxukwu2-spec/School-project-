@@ -1,11 +1,9 @@
 # School-project-
 My NGO WEBSITE 
 ```python
-import os
 
-readme_content = """========================================================================
-HOPE FOUNDATION - WEB DEVELOPMENT GROUP PROJECT
-========================================================================
+
+HOPE FOUNDATION - WEB DEVELOPMENT GROUP PROJECt
 
 1. PROJECT OVERVIEW
 ------------------------------------------------------------------------

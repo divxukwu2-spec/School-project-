@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Foundation - Donate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="asset\image.png" class="icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Hope Foundation</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="impact.html">Our Impact</a></li>
+            <li><a href="donate.html" class="btn">Donate</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h2>Make a Donation</h2>
+        <form action="#" method="POST" class="donation-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+            <label for="amount">Donation Amount ($)</label>
+            <input type="number" id="amount" name="amount" placeholder="50" required>
+
+            <button type="submit" class="btn-primary">Submit Donation</button>
+        </form>
+    </div>
+    <div id="alert"></div>
+</body>
+</html>
+<script>
+    const form = document.querySelector('.form-container ');
+    const button = document.querySelector('.btn-primary');
+    const gmailInput = document.getElementById('email') ;
+    if(gmailInput.value === '') {
+        button.addEventListener('click',(e)=>{
+        e.preventDefault;
+        alert('Please enter a valid email address.');})
+    }else{
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Thank you for your donation! Your support means a lot to us.');
+            form.reset();
+        });
+    }
+</script>
